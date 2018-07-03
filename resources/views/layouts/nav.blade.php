@@ -21,7 +21,8 @@
                 
 @section('my_menu') @can('後台管理')
                 <li><a class="nav-link" href="/admin">{{ __('Admin') }}</a></li>
-                @endcan @show @guest
+                @endcan @show
+                 @guest
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </li>
